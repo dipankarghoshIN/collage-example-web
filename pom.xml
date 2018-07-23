@@ -6,6 +6,7 @@
     <groupId>org.collage.example</groupId>
     <artifactId>collage-example-web</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -51,20 +52,4 @@
         </dependency>
 
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-myquery-plugin</artifactId>
-                <version>1.0</version>
-                <configuration>
-                    <url>http://www.foobar.com/query</url>
-                    <options>
-                        <option>one</option>
-                        <option>two</option>
-                        <option>three</option>
-                    </options>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>
