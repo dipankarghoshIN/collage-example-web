@@ -58,7 +58,6 @@
                 <version>1.0</version>
                 <configuration>
                     <url>http://www.foobar.com/query</url>
-                    <timeout>10</timeout>
                     <options>
                         <option>one</option>
                         <option>two</option>

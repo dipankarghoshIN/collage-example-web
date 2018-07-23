@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS public.student_details_record
+(
+  "student_usn"         	char(10),
+  "student_name"        	char(30),
+  "student_specalization"   char(5),
+  "city"                    char(10),
+  "state"                   char(20),
+  "pin"						integer,
+  "year_one"				float,
+  "year_two"				float,
+  "year_three"				float,
+  "year_four"				float,
+  CONSTRAINT student_details_record_pkey PRIMARY KEY (student_usn)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.student_details_record
+  OWNER TO "postgres";
+GRANT ALL ON TABLE public.student_details_record TO "postgres";
+INSERT into public.student_details_record
+   VALUES('1AY12CS034', 'Dipankar Ghosh', 'CSE', 'Kolkata', 'WestBengal', 712611, 60.66, 60.65, 66.6, 76.4)
+   ON CONFLICT DO NOTHING;
